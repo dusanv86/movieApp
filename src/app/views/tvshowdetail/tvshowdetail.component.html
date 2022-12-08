@@ -1,0 +1,15 @@
+<div class="details-container" *ngIf="tvshowdetails">
+  <h1 class="heading-primary">{{ tvshowdetails.name }}</h1>
+  <h2 class="heading-secondary">{{ tvshowdetails.tagline }}</h2>
+  <div class="img-cover">
+    <img class="backdrop" [src]="'https://image.tmdb.org/t/p/original/' + tvshowdetails.backdrop_path" alt="">
+  </div>
+
+  <div class="details--content">
+    <p class="overview">{{ tvshowdetails.overview }}</p>
+  </div>
+  <div class="details--info-group">
+    <a class="btn-homepage" target="_blank" [href]="tvshowdetails.homepage">Homepage</a>
+    <h2 class="heading-secondary heading-secondary--avr-vote">Average vote: {{ tvshowdetails.vote_average }}</h2>
+  </div>
+</div>

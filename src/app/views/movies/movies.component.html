@@ -1,0 +1,8 @@
+<app-search (search)="onSearch($event)"></app-search>
+
+
+  <div class="content">
+    <app-card [item]="item" *ngFor="let item of movieData" (details)="onDetails($event)"></app-card>
+  </div>
+
+

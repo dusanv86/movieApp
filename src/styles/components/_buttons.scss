@@ -1,0 +1,59 @@
+.btn {
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        font-size: large;
+        font-weight: 800;
+        color: #264563;
+        width:20rem;
+        line-height: 5rem;
+        text-align: center;
+
+    }
+
+    &:hover {
+        transform: translateY(-0.3rem);
+        box-shadow: 0 1rem 2rem rgba(black, .2);
+
+    //     &::after {
+    //         transform: scaleX(1.4) scaleY(1.6);
+    //         opacity: 0;
+    //     }
+    // }
+
+    // &:active {
+    //     transform: translateY(-0.1rem);
+    //     box-shadow: 0 .5rem 1rem rgba(black, .2);
+
+
+    }
+
+
+}
+
+.active {
+  background-color: white;
+  // transition: all ease-in;
+  // transform: scale(1.15);
+}
+
+
+.btn-homepage {
+  text-decoration: none;
+  color: darkblue;
+  background-color: #264563;
+  width: 15rem;
+  height: 4rem;
+  text-transform: uppercase;
+  font-size: large;
+  font-weight:600;
+  text-align: center;
+  line-height: 4rem;
+  border-radius: 1rem;
+  display: inline-block;
+  margin: 1rem;
+}

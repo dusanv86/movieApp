@@ -1,0 +1,15 @@
+<div class="details-container" *ngIf="moviedetails">
+  <h1 class="heading-primary">{{ moviedetails.title }}</h1>
+  <h2 class="heading-secondary">{{ moviedetails.tagline }}</h2>
+  <div class="img-cover">
+    <img class="backdrop" [src]="'https://image.tmdb.org/t/p/original/' + moviedetails.backdrop_path" alt="">
+  </div>
+
+  <div class="details--content">
+    <p class="overview">{{ moviedetails.overview }}</p>
+  </div>
+  <div class="details--info-group">
+    <a class="btn-homepage" target="_blank" [href]="moviedetails.homepage">Homepage</a>
+    <h2 class="heading-secondary heading-secondary--avr-vote">Average vote: {{ moviedetails.vote_average }}</h2>
+  </div>
+</div>

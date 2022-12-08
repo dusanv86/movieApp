@@ -1,0 +1,5 @@
+<!-- <app-card *ngFor="let item of list"></app-card> -->
+<app-search (search)="onSearch($event)"></app-search>
+<div class="content">
+  <app-card routerLink="/tvshow/:id" [item]="item" *ngFor="let item of movieData" (details)="onDetails($event)" ></app-card>
+</div>

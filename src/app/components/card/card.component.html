@@ -1,0 +1,10 @@
+<div class="card" (click)="onSelect(item.id)">
+    <div class="card__poster">
+        <img [src]="'https://image.tmdb.org/t/p/original' + item.poster_path" *ngIf="!item.video" alt="movie-title">
+    </div>
+    <div class="card__title">
+        <h1 class="heading-primary">{{item.title || item.name}}</h1>
+        <h2 class="heading-secondary">Average Vote: {{ item.vote_average }}</h2>
+        <h2 class="heading-secondary">Aired: {{ item.first_air_date }}</h2>
+    </div>
+</div>
